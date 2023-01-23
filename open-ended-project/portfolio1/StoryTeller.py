@@ -32,7 +32,7 @@ print("Please select one from the list.")
 """
 Current plan:
 1. user selects story - done.
-2. class is created for story with name and moral - inprogress.
+2. class is created for story with name and moral - done.
 """
 usr_input = 0
 while True:
