@@ -34,6 +34,7 @@ Current plan:
 1. user selects story - done.
 2. class is created for story with name and moral - inprogress.
 """
+usr_input = 0
 while True:
     for c, i in enumerate(story_list):
         print(f"{c+1}. {i}")
@@ -47,3 +48,6 @@ while True:
             print("Please enter valid number.")
     except ValueError:
         print("Please enter a valid input.")
+
+story = Story(story_list[usr_input-1], story_moral[usr_input-2], brief="")
+print(story.moral)
