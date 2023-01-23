@@ -1,0 +1,84 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(34, 28, 28);
+  text-align: center;
+}
+.page_title {
+  background-image: url("images/hassan.webp");
+  height: 250px;
+  background-position: center;
+}
+h1 {
+  color: rgba(4, 44, 10, 0.9);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 70px;
+  font-weight: 900;
+  margin: 0px;
+  padding-top: 60px;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2 {
+  color: wheat;
+  font-family: "Catamaran", sans-serif;
+  margin: 0px;
+  text-align: left;
+  letter-spacing: 1px;
+}
+h3 {
+  color: green;
+  text-align: left;
+  font-family: "Catamaran", sans-serif;
+  font-size: 27px;
+  margin: 0;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  position: relative; /* revisit here*/
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+p {
+  color: beige;
+  text-align: justify;
+  margin: 0px;
+}
+.hotel {
+  border: 2px solid wheat;
+  margin: 50px auto;
+  padding: 20px 0px 0px 0px;
+  width: 90%;
+}
+.hotel_img {
+  display: inline-block;
+  margin-top: 20px;
+}
+.hotel_discription {
+  display: inline-block;
+  width: 80%;
+}
+.book {
+  width: 100%;
+  margin-top: 10px;
+}
+a {
+  background-color: brown;
+  color: white;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px;
+  padding: 5px;
+  font-family: "Pontano Sans", sans-serif;
+}
+ul {
+  padding: 0;
+  margin: 10px 0;
+}
+li {
+  list-style: none;
+  margin: 0px;
+}
+.breadcrumb a {
+  background-color: inherit;
+}
