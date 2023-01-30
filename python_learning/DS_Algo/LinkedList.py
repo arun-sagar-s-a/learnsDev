@@ -32,3 +32,14 @@ class LinkedList:
         new_node = Node(new_value)
         new_node.set_next_node(self.head_node)
         self.head_node = new_node
+
+    # display Linked List
+    def display(self):
+        temp_node = self.get_head_node()
+        while (temp_node.value != None):
+            print(temp_node.get_vlaue())
+            temp_node = temp_node.get_next_node
+
+
+linked_list = LinkedList(10)
+linked_list.display()
