@@ -15,3 +15,20 @@ class Node:
 
     def set_next_node(self, next_node):
         self.next_node = next_node
+
+# linked list class
+
+
+class LinkedList:
+    def __init__(self, value=None):
+        self.head_node = Node(value)
+
+    # get head node
+    def get_head_node(self):
+        return self.head_node
+    # add node at beginning
+
+    def add_node_beginning(self, new_value):
+        new_node = Node(new_value)
+        new_node.set_next_node(self.head_node)
+        self.head_node = new_node
