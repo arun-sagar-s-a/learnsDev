@@ -1,16 +1,57 @@
+/* universal */
 body {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
+/* for H1 */
 .heading {
   font-family: "Poppins", sans-serif;
 }
+/* for H2 */
 .sub-heading {
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase;
   padding-left: 5px;
 }
-article {
+/* for main article blocks */
+article.section {
   border: 1px solid black;
   margin-bottom: 10px;
+}
+
+/* for complete color blocks */
+.colors-block {
+  /* border: 1px solid black; -> ONLY FOR TESTING PURPOSE*/
+  padding-left: 15px;
+}
+
+/* for individual color blocks */
+.colors-block > #pink {
+  border-color: pink;
+  background-color: pink;
+}
+.colors-block > #orange {
+  border-color: orange;
+  background-color: orange;
+}
+.colors-block > #blue {
+  border-color: lightblue;
+  background-color: lightblue;
+}
+.colors-block > #red {
+  border-color: red;
+  background-color: red;
+}
+
+/* common to all foregoing color block*/
+.common-to-colors {
+  border: 1px solid;
+
+  display: inline-block;
+  width: 400px;
+
+  margin-bottom: 20px;
+
+  text-align: center;
+  border-radius: 5px;
 }
