@@ -128,14 +128,29 @@ class LinkedList:
     def nth_last_element(self, n):
         current_node = self.get_head_node()  # current node to iterate completely
         count = 0  # to keep track of ele
-        nth_last_node = self.get_head_node()
+        nth_last_node = None
         while current_node is not None:
             current_node = current_node.get_next_node()
             count += 1
 
             if count > n:
-                nth_last_node = nth_last_node.get_next_node()
+                if nth_last_node is None:
+                    nth_last_node = self.get_head_node()
+                else:
+                    nth_last_node = nth_last_node.get_next_node()
         return nth_last_node.get_value()
+
+    def middle(self):
+        fast_pointer = self.get_head_node()
+        slow_pointer = self.get_head_node()
+
+        while fast_pointer is not None:
+            fast_pointer = fast_pointer.get_next_node()
+
+            if fast_pointer is not None:
+                fast_pointer = fast_pointer.get_next_node()
+                slow_pointer = slow_pointer.get_next_node()
+        return slow_pointer.get_value()
 
 
 linked_list = LinkedList(10)
@@ -153,3 +168,4 @@ linked_list.display()
 # linked_list.display()
 ele = 0
 print(f"Last {ele} element : ", linked_list.nth_last_element(ele))
+print("Middle element : ", linked_list.middle())
