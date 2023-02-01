@@ -112,6 +112,31 @@ class LinkedList:
         node1.set_next_node(node2.get_next_node())
         node2.set_next_node(temp_node)
 
+    # nth last element
+    def nth_last(self, ele):
+        current_node = self.get_head_node()
+        temp_node = self.get_head_node()
+        length = 0
+        while temp_node is not None:
+            length += 1
+            temp_node = temp_node.get_next_node()
+        for i in range(length-ele):
+            current_node = current_node.get_next_node()
+        return current_node.get_value()
+    # another implentation.
+
+    def nth_last_element(self, n):
+        current_node = self.get_head_node()  # current node to iterate completely
+        count = 0  # to keep track of ele
+        nth_last_node = self.get_head_node()
+        while current_node is not None:
+            current_node = current_node.get_next_node()
+            count += 1
+
+            if count > n:
+                nth_last_node = nth_last_node.get_next_node()
+        return nth_last_node.get_value()
+
 
 linked_list = LinkedList(10)
 for i in range(9):
@@ -119,10 +144,12 @@ for i in range(9):
 
 
 print("Display function")
-# linked_list.display()
+linked_list.display()
 # print("After swapp")
 # print("Remove function")
 # linked_list.remove_node(12)
-linked_list.swap_nodes(1, 9)
-print("Display function")
-linked_list.display()
+# linked_list.swap_nodes(1, 9)
+# print("Display function")
+# linked_list.display()
+ele = 0
+print(f"Last {ele} element : ", linked_list.nth_last_element(ele))
