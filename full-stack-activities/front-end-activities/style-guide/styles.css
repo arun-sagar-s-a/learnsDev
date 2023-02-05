@@ -55,3 +55,46 @@ article.section {
   text-align: center;
   border-radius: 5px;
 }
+
+/* for complete fonts blocks */
+.fonts-block {
+  /*border: 1px solid black; -> ONLY FOR TESTING PURPOSE*/
+  padding-left: 15px;
+}
+/* individual fonts */
+#font1 {
+  font-family: "Raleway", sans-serif;
+}
+#font2 {
+  font-family: "Source Serif Pro", serif;
+}
+#font3 {
+  font-family: "Itim", cursive;
+}
+/* commong to font headings */
+.font-heading {
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+/* types of font styles */
+.normal-text {
+  font-style: normal;
+}
+.bold-text {
+  font-weight: bold;
+}
+.italic-text {
+  font-style: italic;
+}
+/*  */
+.fonts-block {
+  display: inline-block;
+  /* border: 1px black solid; */
+}
+.common-to-fonts {
+  display: inline-block;
+  /* border: 1px black solid; */
+  padding: 0;
+  margin-left: 5px;
+}
