@@ -1,0 +1,18 @@
+/*
+default position is static - does nothing just follow the flow of the html.
+relative is same as static but can move left right bottom top relative to its static position. 
+ */
+.parent {
+}
+.child1 {
+  position: relative;
+  left: 100px;
+}
+.child2 {
+  position: relative;
+  right: -100px;
+}
+.child3 {
+  position: relative;
+  bottom: 10px;
+}
