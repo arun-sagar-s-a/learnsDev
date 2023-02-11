@@ -1,18 +1,18 @@
 /*
 default position is static - does nothing just follow the flow of the html.
-relative is same as static but can move left right bottom top relative to its static position. 
+relative is same as static but can move left right bottom top relative to its static position.
+absolute position makes the element come out of it normal flow. and positons absolute to its parent 
+element which has positon other than static else move to next parent finally till it reaches the HTML layout itself. 
  */
 .parent {
+  /* position: relative; */
 }
 .child1 {
-  position: relative;
-  left: 100px;
+  position: absolute;
+  top: 0;
 }
 .child2 {
-  position: relative;
-  right: -100px;
+  /* position: relative; */
 }
 .child3 {
-  position: relative;
-  bottom: 10px;
 }
