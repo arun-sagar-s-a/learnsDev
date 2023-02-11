@@ -2,13 +2,17 @@
 default position is static - does nothing just follow the flow of the html.
 relative is same as static but can move left right bottom top relative to its static position.
 absolute position makes the element come out of it normal flow. and positons absolute to its parent 
-element which has positon other than static else move to next parent finally till it reaches the HTML layout itself. 
+element which has positon other than static else move to next parent finally till it reaches the HTML layout itself.
+Fixed elements come out of flow and stick to the actual HTML page itself. 
+sticky position is combo of relative and fixed.
  */
 .parent {
-  /* position: relative; */
+  position: relative;
+  height: 200vh;
+  width: 200vh;
 }
 .child1 {
-  position: absolute;
+  position: sticky;
   top: 0;
 }
 .child2 {
