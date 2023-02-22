@@ -1,0 +1,106 @@
+body {
+  background-color: black;
+  height: 2000px;
+}
+.outline {
+  outline: 1px solid snow;
+}
+.teashop-header {
+  margin-left: 10px;
+  margin-right: 10px;
+  z-index: 1;
+  height: 69px;
+
+  display: flex;
+  align-items: center;
+
+  position: sticky;
+  top: 0px;
+}
+#teashop-logo {
+  height: 50px;
+  text-align: left;
+  margin-left: 10px;
+}
+.header-navigation {
+  display: inline-flex;
+  justify-content: space-between;
+  position: absolute;
+  right: 10px;
+  outline-color: green;
+}
+/* .header-navigation li {
+  list-style: none;
+  margin: 0 auto;
+  display: inline-flex;
+  justify-content: space-between;
+} */
+.header-navigation a {
+  color: white;
+  font-size: 22px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.mission-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mission-img {
+  width: 1200px;
+  height: 700px;
+}
+.mission-description {
+  background-color: black;
+  color: snow;
+  position: absolute;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  width: 1200px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 2px;
+  outline-color: green;
+}
+.featured-section {
+  display: flex;
+  justify-content: center;
+}
+.featured-innersection {
+  width: 1000px;
+  display: inline-flex;
+  text-align: center;
+  flex-direction: column;
+  outline-color: green;
+}
+.featured-heading {
+  color: snow;
+  letter-spacing: 2px;
+  font-family: Helvetica, sans-serif;
+  outline-color: green;
+  margin: 20px;
+}
+.featured-img {
+  outline-color: red;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 20px;
+}
+.featured-img-container {
+  margin: 0;
+  padding: 0;
+}
+.img {
+  height: 200px;
+  width: 300px;
+  border-radius: 15px;
+  opacity: 0.9;
+}
+p {
+  color: snow;
+  margin-top: 10px;
+  font-family: Helvetica, sans-serif;
+}
