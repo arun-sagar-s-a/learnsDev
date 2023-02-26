@@ -2,9 +2,9 @@ body {
   background-color: black;
   height: 2000px;
 }
-.outline {
+/* .outline {
   outline: 1px solid snow;
-}
+} */
 .teashop-header {
   margin-left: 10px;
   margin-right: 10px;
@@ -103,4 +103,58 @@ p {
   color: snow;
   margin-top: 10px;
   font-family: Helvetica, sans-serif;
+}
+.location-section {
+  display: flex;
+  justify-content: center;
+  font-family: Helvetica, sans-serif;
+}
+h2 {
+  color: snow;
+}
+.location-innersection1 {
+  height: 600px;
+  width: 1200px;
+  background-image: url("img-locations-background.jpg");
+  text-align: center;
+  position: relative;
+  align-content: center;
+}
+.location-head {
+  position: absolute;
+  top: 20%;
+  left: 50px;
+  right: 50px;
+  text-align: center;
+  font-size: 32px;
+}
+.common-location {
+  margin-top: 15px;
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  right: 50px;
+  display: inline-flex;
+  column-gap: 40px;
+  justify-content: center;
+}
+.location {
+  background-color: black;
+  font-size: 22px;
+  width: 300px;
+  border-radius: 20px;
+}
+.location-botom {
+  height: 200px;
+  color: snow;
+  text-align: center;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  text-align: left;
+  margin-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
 }
